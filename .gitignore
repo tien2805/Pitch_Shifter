@@ -1,0 +1,43 @@
+# ==============================================================
+#  .gitignore — FPGA Pitch Shifter Project
+# ==============================================================
+
+# === ModelSim / Quartus Build Artifacts ===
+work/
+db/
+incremental_db/
+output_files/
+simulation/
+*.wlf
+wlf*
+transcript
+modelsim.ini
+*.vo
+*.vt
+*.sft
+
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+
+# === Simulation Generated Files ===
+sim/demo_output.txt
+sim/demo_input.hex
+sim/input.txt
+sim/input.wav
+sim/*.vcd
+
+# === OS Files ===
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# === IDE / Editor ===
+.vscode/
+*.swp
+*.swo
+*~
+
+# === Internal Planning (not for public) ===
+project_plan.md

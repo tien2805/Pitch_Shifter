@@ -27,6 +27,7 @@ sim/demo_input.hex
 sim/input.txt
 sim/input.wav
 sim/*.vcd
+sim/*.png
 
 # === OS Files ===
 Thumbs.db

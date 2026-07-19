@@ -88,10 +88,7 @@ fpga-pitch-shifter/
 │   └── build.tcl                 #   Vivado build script
 │
 ├── docs/                         # Documentation
-│   ├── Final_Report.pdf          #   Project research paper
-│   ├── TONG_QUAN_DU_AN.md        #   Project overview
-│   ├── REPORT_DIAGRAMS.md        #   Architecture diagrams (Mermaid)
-│   └── HUONG_DAN_DEMO.md         #   Demo guide
+│   └── Final_Report.pdf          #   Project research paper
 │
 ├── music_pitch_tool.py           # Python Audio GUI demo
 ├── .gitignore

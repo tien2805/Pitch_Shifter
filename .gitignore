@@ -2,6 +2,9 @@
 #  .gitignore — FPGA Pitch Shifter Project
 # ==============================================================
 
+# === Temporary Files ===
+temp_processed.wav
+
 # === ModelSim / Quartus Build Artifacts ===
 work/
 db/

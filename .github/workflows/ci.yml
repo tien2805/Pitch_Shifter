@@ -1,0 +1,32 @@
+name: FPGA CI/CD
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Install Icarus Verilog
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y iverilog
+
+    - name: Compile RTL and Testbench
+      run: |
+        cd sim
+        # Biên dịch testbench system (kiểm tra lỗi cú pháp và logic cơ bản)
+        iverilog -o system_tb.vvp tb_system_wav.v ../rtl/*.v
+        
+    - name: Run Simulation
+      run: |
+        cd sim
+        # Chạy mô phỏng (chỉ chạy 1 khoảng ngắn để xác nhận không bị crash)
+        vvp system_tb.vvp +max_cycles=10000

@@ -91,7 +91,6 @@ fpga-pitch-shifter/
 │   ├── Final_Report.pdf          #   Project research paper
 │   ├── TONG_QUAN_DU_AN.md        #   Project overview
 │   ├── REPORT_DIAGRAMS.md        #   Architecture diagrams (Mermaid)
-│   ├── Q_AND_A_BAO_VE.md         #   Defense Q&A bank
 │   └── HUONG_DAN_DEMO.md         #   Demo guide
 │
 ├── music_pitch_tool.py           # Python Audio GUI demo
